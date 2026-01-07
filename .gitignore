@@ -1,0 +1,72 @@
+####################################
+# Système / OS
+####################################
+.DS_Store
+Thumbs.db
+desktop.ini
+
+####################################
+# Éditeurs / IDE
+####################################
+.vscode/
+.idea/
+*.swp
+*.swo
+
+####################################
+# Logs (générique)
+####################################
+*.log
+debug.log
+error_log
+
+####################################
+# Dépendances
+####################################
+/node_modules/
+/vendor/
+
+####################################
+# Env / secrets
+####################################
+.env
+.env.*
+wp-config.php
+
+####################################
+# WordPress core (présent dans ton projet)
+####################################
+/wp-admin/
+/wp-includes/
+
+# Fichiers WP à la racine (core)
+index.php
+wp-*.php
+xmlrpc.php
+
+# Fichiers d'info WordPress
+readme.html
+license.txt
+wp-config-sample.php
+
+####################################
+# WordPress – contenu généré
+####################################
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/cache/
+/wp-content/backups/
+/wp-content/ai1wm-backups/
+/wp-content/wflogs/
+
+####################################
+# Thèmes – build / caches éventuels
+####################################
+/wp-content/themes/*/node_modules/
+/wp-content/themes/*/dist/
+/wp-content/themes/*/.cache/
+
+####################################
+# Serveur (souvent spécifique à l'environnement)
+####################################
+.htaccess

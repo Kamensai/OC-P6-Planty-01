@@ -1,0 +1,33 @@
+body * {
+  font-family: "Syne", sans-serif;
+}
+
+.clr.container {
+  font-family: "Syne", sans-serif;
+}
+
+p {
+  color: blue;
+}
+
+.wpr-logo-url:hover,
+.wpr-logo-url:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/** Footer **/
+#site-footer {
+  font-family: "Syne", sans-serif;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#site-footer p {
+  margin: 0;
+  align-items: center;
+  color: #000000;
+}
