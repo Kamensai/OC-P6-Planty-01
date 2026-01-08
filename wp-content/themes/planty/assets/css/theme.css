@@ -54,15 +54,92 @@ p {
   background-position: 34% 95%;
 }
 
-/* page Commander */
-.order-form-title {
-  color: #fff;
-}
-
 /* Image canette Planty */
 .canette-planty {
   background-image: url("../img/feuille-droite.png"),
     url("../img/feuille-gauche.png");
   background-repeat: no-repeat, no-repeat;
   background-position: 72%, 26%;
+}
+
+/* page Commander */
+.order-form-title {
+  color: #fff;
+}
+
+.order-separator {
+  border: 1px solid #fff;
+}
+
+.planty-products {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 26px;
+  align-items: start;
+}
+
+.planty-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.planty-img-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.product-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.product-name {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1;
+  font-size: clamp(18px, 3vw, 32px);
+  pointer-events: none;
+}
+
+.info-livraison {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 48px;
+  margin-top: 22px;
+  position: relative;
+}
+
+.info-col p {
+  display: block;
+  width: 100%;
+}
+
+.livraison-col p {
+  display: block;
+  width: 100%;
+}
+
+.vertical-separator {
+  background: #fff;
+  opacity: 0.6;
+}
+
+.info-livraison .order-submit-button {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+}
+
+.wpcf7-spinner {
+  display: none;
 }
