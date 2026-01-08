@@ -31,3 +31,38 @@ p {
   align-items: center;
   color: #000000;
 }
+
+/* Page Nous rencontrer */
+.meet-top-block {
+  background-image: url("../img/fleur.png");
+  background-size: 145px;
+  background-repeat: no-repeat;
+  background-position: 15% 26%;
+}
+
+.meet-team-block {
+  background-image: url("../img/feuille-gauche.png");
+  background-size: 192px;
+  background-repeat: no-repeat;
+  background-position: 90% 100%;
+}
+
+.meet-contact-form {
+  background-image: url("../img/feuilles.png");
+  background-size: 147px;
+  background-repeat: no-repeat;
+  background-position: 34% 95%;
+}
+
+/* page Commander */
+.order-form-title {
+  color: #fff;
+}
+
+/* Image canette Planty */
+.canette-planty {
+  background-image: url("../img/feuille-droite.png"),
+    url("../img/feuille-gauche.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 72%, 26%;
+}
