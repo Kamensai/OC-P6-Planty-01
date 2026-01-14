@@ -155,6 +155,14 @@ p {
   width: 100%;
 }
 
+.planty-img-wrap p {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  line-height: 0;
+  padding-bottom: 15px;
+}
+
 .product-img {
   display: block;
   width: 100%;
@@ -207,4 +215,73 @@ p {
 
 .wpcf7-spinner {
   display: none;
+}
+
+@media (max-width: 767px) {
+  /*Menu mobile*/
+
+  .elementor-1123
+    .elementor-element.elementor-element-2e37cb9.elementor-element {
+    display: flex;
+  }
+
+  body .wpr-nav-menu-bp-mobile .wpr-mobile-nav-menu-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-item-1102 > a {
+    color: #000 !important;
+  }
+
+  .menu-item-1102 > a:hover {
+    color: #fff !important;
+  }
+
+  .menu_item_user_is_logged > a {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Page Commander */
+  .planty-products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .product-name {
+    font-size: clamp(14px, 4vw, 24px);
+  }
+
+  .info-livraison {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .vertical-separator {
+    display: none;
+  }
+
+  /* Page Accueil */
+  .canette-planty {
+    background-image: none;
+  }
+
+  .product-home {
+    background-position: center;
+  }
+
+  /* Page nous rencontrer */
+
+  .meet-top-block {
+    background-image: none;
+  }
+
+  .meet-team-block {
+    background-image: none;
+  }
+
+  .meet-contact-form {
+    background-image: none;
+  }
 }
