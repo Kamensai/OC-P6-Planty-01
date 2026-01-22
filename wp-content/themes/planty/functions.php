@@ -17,7 +17,7 @@ function theme_enqueue_styles(){
 
 function add_extra_item_to_nav_menu( $items, $args ) {
 	if (is_user_logged_in() && $args->menu === 'main-menu') {
-		$new_item = '<li class="menu_item_user_is_logged"><a href="/planty">Admin</a></li>';
+		$new_item = '<li class="menu_item_user_is_logged"><a href=" '. admin_url() .'">Admin</a></li>';
 		$items = preg_replace('/<\/li>/', '</li>' . $new_item, $items, 1);
 	}
 	return $items;
