@@ -121,8 +121,8 @@ p {
 
 /* Image canette Planty */
 .canette-planty {
-  background-image: url("../img/feuille-droite.png"),
-    url("../img/feuille-gauche.png");
+  background-image:
+    url("../img/feuille-droite.png"), url("../img/feuille-gauche.png");
   background-repeat: no-repeat, no-repeat;
   background-position: 72%, 26%;
 }
@@ -217,7 +217,13 @@ p {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1025px) {
+  .meet-team-block {
+    background-size: 100px;
+  }
+}
+
+@media (max-width: 769px) {
   /*Menu mobile*/
 
   .elementor-1123
@@ -264,7 +270,7 @@ p {
 
   /* Page Accueil */
   .canette-planty {
-    background-image: none;
+    background-position: 78%, 20%;
   }
 
   .product-home {
@@ -274,14 +280,44 @@ p {
   /* Page nous rencontrer */
 
   .meet-top-block {
-    background-image: none;
+    background-size: 80px;
+    background-position: 5% 5%;
   }
 
   .meet-team-block {
-    background-image: none;
+    background-size: 100px;
+    background-position: 90% 100%;
   }
 
   .meet-contact-form {
-    background-image: none;
+    background-position: 20% 95%;
+  }
+}
+
+/* Image background responsiv */
+
+@media (max-width: 700px) {
+  .canette-planty {
+    background-position: 100%, 0%;
+  }
+}
+
+@media (max-width: 530px) {
+  .canette-planty {
+    background-size:
+      50% auto,
+      50% auto;
+    background-position:
+      90% center,
+      10% center;
+  }
+
+  .meet-top-block {
+    background-size: 40px;
+    background-position: 2% 2%;
+  }
+
+  .meet-contact-form {
+    background-position: 0% 100%;
   }
 }
